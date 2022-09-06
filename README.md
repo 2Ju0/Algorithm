@@ -1,2 +1,2 @@
-# Study-For-Coding-Test
+## Study for coding test
 💻solutions to BOJ by python
