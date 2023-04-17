@@ -11,7 +11,3 @@ if __name__ == "__main__":
         print(-1)
     else:
         print(result[k-1])
-
-if __name__ == "__main__":
-    input = sys.stdin.readline
-
