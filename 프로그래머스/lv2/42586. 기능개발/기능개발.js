@@ -1,17 +1,6 @@
 function solution(progresses, speeds) {
     var answer = [];
-    let days = [];
-    
-    for(let i = 0; i < progresses.length; i++){
-        let cnt = 1;
-        while(true){
-            if(progresses[i] + speeds[i] * cnt >= 100){
-                days.push(cnt);
-                break;
-            }
-            cnt += 1;
-        }
-    }
+    let days = progresses.map((progress, index) => Math.ceil((100 - progress) / speeds[index]));
     
     let prev = days[0];
     let sumOfFunc = 1;
