@@ -1,14 +1,14 @@
 function getGCD(a, b) {
-    let answer = 1;
+    let gcd = 1;
     
-    if(a % b === 0) answer = b;
-    else if(b % a === 0) answer = a;
+    if(a % b === 0) gcd = b;
+    else if(b % a === 0) gcd = a;
     else{
         for(let i = 2; i <= Math.min(a, b); i++){
-            if(a % i === 0 && b % i === 0) answer = i;
+            if(a % i === 0 && b % i === 0) gcd = i;
         }
     }
-    return answer;
+    return gcd;
 }
 
 function solution(arr) {
@@ -18,7 +18,7 @@ function solution(arr) {
         let gcd = getGCD(a, b);
         
         if(gcd === 1) arr.push(a * b);
-        else arr.push(gcd * parseInt(a / gcd) * parseInt(b / gcd));
+        else arr.push(a * b / gcd);
     }
     return arr.shift();
 }
