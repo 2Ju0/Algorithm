@@ -6,6 +6,7 @@ if __name__ == "__main__":
     n, m = map(int, input().split())
     arr = list(map(int, input().split()))
 
+    longest = max(arr)
     answer = 0
     start = 1
     end = sum(arr)
@@ -22,10 +23,10 @@ if __name__ == "__main__":
             else:
                 tmp += v
 
-        if cnt > m:
-            start = mid + 1
-        else:
+        if mid >= longest and cnt <= m:
             end = mid - 1
             answer = mid
+        else:
+            start = mid + 1
 
     print(answer)
