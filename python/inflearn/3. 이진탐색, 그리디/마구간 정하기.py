@@ -25,6 +25,6 @@ if __name__ == "__main__":
             start = mid + 1
             answer = mid
         else:
-            end = mid -1
+            end = mid - 1
 
-    print(arr)
+    print(answer)
