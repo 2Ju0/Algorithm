@@ -18,7 +18,7 @@ if __name__ == "__main__":
                 is_right = False
                 break
 
-        if is_right:
+        else:
             if dq:
                 print("#%d NO" % (i + 1))
             else:
