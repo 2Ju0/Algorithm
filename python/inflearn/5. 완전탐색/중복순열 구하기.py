@@ -5,7 +5,7 @@ def dfs(cnt):
     global total
 
     if cnt == m:
-        print(' '.join([str(num) for num in result]))
+        print(' '.join([str(i) for i in result]))
         total += 1
         return
     else:
@@ -15,7 +15,9 @@ def dfs(cnt):
 
 
 if __name__ == "__main__":
-    n, m = map(int, sys.stdin.readline().split())
+    input = sys.stdin.readline
+
+    n, m = map(int, input().split())
     result = [0] * m
     total = 0
 
