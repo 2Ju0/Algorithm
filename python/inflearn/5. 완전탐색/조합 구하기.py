@@ -6,21 +6,23 @@ def dfs(v, cnt):
 
     if cnt == m:
         total += 1
-        print(' '.join([str(num) for num in result]))
+        print(' '.join([str(i) for i in answer]))
         return
     if v > n:
         return
     else:
-        result[cnt] = v
+        answer[cnt] = v
         dfs(v + 1, cnt + 1)
+        answer[cnt] = 0
         dfs(v + 1, cnt)
 
 
 if __name__ == "__main__":
-    n, m = map(int, sys.stdin.readline().split())
-    result = [0] * m
+    input = sys.stdin.readline
+
+    n, m = map(int, input().split())
+    answer = [0] * m
     total = 0
 
     dfs(1, 0)
     print(total)
-
