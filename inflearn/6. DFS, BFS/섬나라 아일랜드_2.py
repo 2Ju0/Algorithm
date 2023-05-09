@@ -17,7 +17,8 @@ if __name__ == "__main__":
         for j in range(n):
             if graph[i][j] == 1:
                 que.append((i, j))
-
+                graph[i][j] = 0
+                
                 while que:
                     x, y = que.popleft()
                     for i in range(8):
