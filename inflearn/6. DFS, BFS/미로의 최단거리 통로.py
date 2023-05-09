@@ -26,4 +26,7 @@ if __name__ == "__main__":
                 dis[next_x][next_y] = dis[x][y] + 1
                 que.append((next_x, next_y))
 
-    print(dis[6][6])
+    if dis[6][6] == 0:
+        print(-1)
+    else:
+        print(dis[6][6])
