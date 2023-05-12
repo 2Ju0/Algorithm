@@ -18,5 +18,3 @@ if __name__ == "__main__":
         answer = max(answer, dp[i])
 
     print(answer)
-
-
