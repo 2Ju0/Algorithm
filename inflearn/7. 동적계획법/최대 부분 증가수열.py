@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     for i in range(1, n):
         tmp = 0
-        for j in range(i - 1, 0, -1):
+        for j in range(i - 1, -1, -1):
             if arr[j] < arr[i] and tmp < dp[j]:
                 tmp = dp[j]
         dp[i] = tmp + 1
