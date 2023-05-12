@@ -1,5 +1,6 @@
 import sys
 
+
 if __name__ == "__main__":
     n = int(sys.stdin.readline())
     arr = [0] * (n + 1)
