@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../:\주영\자소서\codingtest\.idea/dataSources/
+*.idea
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
