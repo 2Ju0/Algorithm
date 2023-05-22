@@ -1,14 +1,14 @@
 import sys
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     input = sys.stdin.readline
 
     n, m = map(int, input().split())
-    dy = [0] * (m + 1)
+    dp = [0] * (m + 1)
 
-    for i in range(n):
-        ps, pt = map(int, input().split())
-        for j in range(m, pt - 1, -1):
-            dy[j] = max(dy[j], dy[j - pt] + ps)
+    for _ in range(n):
+        score, time = map(int, input().split())
+        for i in range(time, m + 1):
+            dp[i] = max(dp[i], dp[i - time] + score)
 
-    print(dy[m])
+    print(dp[m])
