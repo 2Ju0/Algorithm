@@ -5,7 +5,7 @@ if __name__ == '__main__':
     input = sys.stdin.readline
 
     n, m = map(int, input().split())
-    graph=[[0]*(n+1) for _ in range(n+1)]
+    graph = [[0] * (n + 1) for _ in range(n + 1)]
     degree = [0] * (n + 1)
 
     for _ in range(m):
