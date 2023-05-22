@@ -15,4 +15,4 @@ if __name__ == "__main__":
         for i in range(coin, m + 1):
             dp[i] = min(dp[i], dp[i - coin] + 1)
 
-    print(dp)
+    print(dp[m])
